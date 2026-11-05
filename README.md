@@ -21,34 +21,7 @@ Built using **Python, FastAPI, n8n, and OpenAI**, it coordinates four specialist
 ## 🏗️ Architecture
 
 ```text
-             INCIDENT WEBHOOK
-                    |
-                    v
-             INCIDENT COMMANDER
-                    |
-          +---------+-------------------+
-          |         |         |         |
-          v         v         v         v
-     Transaction  Log      Metrics   Fraud & Risk
-      Analyst   Investigator Analyst  Analyst
-          |         |         |         |
-          +---------+-------------------+
-                    |
-                    |
-                    v
-           COLLECT ALL RESULTS
-                    |
-                    v
-           ROOT CAUSE ANALYST
-                    |
-                    v
-          FINAL INCIDENT REPORT
-                    |
-                    v
-             WEBHOOK RESPONSE
-
-
-              WEBHOOK TRIGGER
+                WEBHOOK TRIGGER
                       |
                       v
                INCIDENT COMMANDER
